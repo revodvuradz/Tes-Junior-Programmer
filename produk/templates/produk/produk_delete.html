@@ -1,0 +1,8 @@
+<h2>Hapus Produk</h2>
+<p>Yakin mau hapus <b>{{ produk.nama_produk }}</b>?</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Ya, Hapus</button>
+    <a href="{% url 'produk_list' %}">Batal</a>
+</form>
